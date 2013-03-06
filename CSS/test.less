@@ -1,0 +1,34 @@
+.site {
+	border-top: dotted 1px black;
+	border-bottom: solid 2px black;
+}
+
+#menu a{
+	color: #111;
+	.site;
+}
+.site{
+	&.float{
+		float: left;
+	}
+	.top{
+		margin: 5px;
+	}
+}
+.border-radius(@radius){
+	border-radius: @radius;
+	-moz-border-radius:@radius;
+	-webkit-border-radius:@radius;
+}
+
+#header{
+	.border-radius(4px);
+}
+.wrap () {
+  text-wrap: wrap;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  word-wrap: break-word;
+}
+
+pre { .wrap }
