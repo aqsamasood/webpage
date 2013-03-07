@@ -342,7 +342,7 @@ header input {
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
 }
-/* COMMENTS*/
+/****---- COMMENTS ----*****/
 #comments li:last-child {
   border-bottom: none;
 }
@@ -363,7 +363,7 @@ header input {
 .tabs a:hover {
   text-decoration: none;
 }
-.tabs > ul li {
+.tabs ul li {
   display: block;
   border-bottom: 1px solid #1d6b78;
   border-top: 1px solid #399cac;
@@ -376,13 +376,13 @@ header input {
 .tabs ul:-first-child li:hover {
   background: none;
 }
-.tabs > ul li:hover {
+.tabs ul li:hover {
   cursor: pointer;
 }
-.tabs > ul li:first-child {
+.tabs ul li:first-child {
   border-top: none;
 }
-.tabs > ul li:last-child {
+.tabs ul li:last-child {
   border-bottom: none;
 }
 #categories,
@@ -390,15 +390,32 @@ header input {
   padding-left: 0;
   padding-right: 0;
 }
-/**SPONSORS**/
-#separator img {
-  border: 0px solid #f8eede;
-  -moz-box-shadow: 0 0 0 1px #f8eede;
+/**---- SPONSORS -----**/
+#sponsors {
+  /*li:nth-child(even) {
+	float:right;
+	}*/
+
 }
-#sponsors li:nth-child(even) {
-  float: right;
+#sponsors li {
+  display: inline;
 }
-#secondary img {
+/*#secondary img {
+	border:5px solid #febf5d;
+	-moz-box-shadow:0 0 0 1px #fdb84d;
+		
+}*/
+#separator {
+  margin-left: 0px;
+  margin-top: 0px;
+}
+#sponsors li {
+  display: inline-block;
+  margin-right: 7.6px;
+}
+#whoWeAre img,
+#sponsor1 img,
+#sponsor2 img {
   border: 5px solid #febf5d;
   -moz-box-shadow: 0 0 0 1px #fdb84d;
 }
@@ -414,6 +431,7 @@ header input {
 }
 #footer-wrap button {
   float: right;
+  position: relative;
 }
 /**--- RECENT PROJECTS ---**/
 #RecentProjects li {
