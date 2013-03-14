@@ -811,7 +811,9 @@ a:hover {
 p {
   font-size: 12px;
   line-height: 18px;
-  font-size: verdana, helvetica, arial, sans-serif;
+  font-size: avro;
+  /*font-size: verdana,helvetica,arial,sans-serif;*/
+
 }
 h1,
 h2,
@@ -819,7 +821,9 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: myriad-pro, helvetica, arial, sans-serif;
+  font-family: avro;
+  /*font-family: myriad-pro, helvetica, arial, sans-serif;*/
+
   text-transform: uppercase;
   font-weight: normal;
   color: #40312a;
@@ -996,7 +1000,7 @@ header input {
 }
 #banner {
   background: url(../images/smaller_bg.jpg);
-  padding: 30px 45px 15px 35px;
+  padding: 30px 45px 5px 35px;
   color: white;
   position: relative;
   z-index: 4;
@@ -1009,14 +1013,23 @@ header input {
   text-shadow: 0 -1px 0 #2b1f1a;
   line-height: 20px;
 }
-#banner h2,
 #banner p {
   padding-right: 517px;
 }
-#banner input,
-#banner button {
+#banner li {
+  display: inline-block;
+  width: 130px;
+  height: 28px;
+  background: url(../images/buttonBg.jpg);
   margin-right: 20px;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  padding-top: 8px;
+}
+#banner a {
   color: white;
+  padding: 30px;
 }
 #featured {
   position: absolute;
@@ -1098,6 +1111,12 @@ header input {
   padding: 20px 10px 0;
   margin-bottom: 0;
   border-top: 1px solid #248fac;
+}
+.js .tabs h4 {
+  display: none;
+}
+.js .tabs > ul:not(:first-child) {
+  display: none;
 }
 #tabHeadings {
   display: block;

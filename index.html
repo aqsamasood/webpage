@@ -1,12 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
+	<script  src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+ <script src="js/scripts.js"></script>
+<script>document.documentElement.className='js';</script>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<title>SITENAME</title>
 	<meta name="generator" content="TextMate http://macromates.com/">
 	<meta name="author" content="devmac61">
 	<!-- Date: 2013-02-14 -->
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="font/stylesheet.css">
+	<script  href="js/validation.js"></script>
+	
+ 
 </head>
 
 <body>
@@ -51,10 +57,17 @@
 			Lorem  psum dolor sit amet, consecteturadipiscing  elit, sed do eiusmod tempor incididunt ut labore et dolore         				              magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris.labore et dolor magna aliqua.Some text goes here.</p>
 			  <p>
 				Lorem  psum dolor sit amet, consecteturadipiscing  elit, sed do eiusmod tempor incididunt ut labore et   dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris.labore et dolor magna aliqua.Some text goes here.</p>
-				
-		<button>Learn More</button>
-		<button>Our Work</button>
-    </div>
+		
+		<ul>
+		<li>
+		<a href="#">Learn More</a>
+		</li>
+		<li>
+		<a href="#">Our Work</a>
+		</li>
+		</ul>
+		</div>
+
     <div id="breadcrumbs" class="container_24">
     <ul>
 
@@ -95,20 +108,20 @@
 			
 			 <ul id="tabHeadings">
 				<li class="selected">
-					<a href="comments">Comments</a>
+					<a href="#comments">Comments</a>
 					
 				</li>
 				<li>
-					<a href="categories">Categories</a>
+					<a href="#categories">Categories</a>
 					
 				</li>
 				<li>
-					<a href="Archives">Archives</a>
+					<a href="#Archives">Archives</a>
 					
 				</li>
 		     </ul>
 		
-		<section class="tabs rounded" id="para">
+		<section class="tabs" id="para">
 				<ul id ="comments">
 					<li>
 						 <p>Lorem  psum dolor sit amet, consecteturadipiscing  elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -131,7 +144,7 @@
        
 			
 			
-	<!-- 	<h4>Categories</h4>
+		<h4>Categories</h4>
 			<ul id="categories" >
 				<li>
 					<a href=#"">Category</a>
@@ -168,7 +181,7 @@
 						<a href=#"">Archive</a>
 					</li>
 
-				</ul>  -->
+				</ul> 
    </section>
 				
 				
@@ -205,8 +218,9 @@
 				<footer class="container_24">
 					<section class="grid_8">
 						<h3>Get a free Quote</h3>
-						<form action="#" method="post">
-							<input type="text" id="name" name="name" value="Your Name" > </input>
+						<form action="#" onsubmit="return validateForm();" method="post">
+							<input type="text" id="name" name="name" value="Your Name"
+							> </input>
 							<input type="text" name="email" value="Your Email"> </input>
 							<textarea name="projectDetials" value="Your Project Details."> </textarea>
 							<input type="text" name="timescale" value="Your TimeScale" size="38px"> </input>
@@ -287,5 +301,6 @@
 			</footer>
 		</div>
  </div>
+
 </body>
 </html>

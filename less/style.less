@@ -15,18 +15,21 @@ a{
 }
 
 a:hover{
-text-decoration: underline;	
+text-decoration:underline;
+
 }
 
 p{
 	font-size: 12px;
 	line-height:18px;
-	font-size: verdana,helvetica,arial,sans-serif;
+	font-size: avro;
+	/*font-size: verdana,helvetica,arial,sans-serif;*/
 	
 }
 
 h1,h2,h3,h4,h5,h6{
-	font-family: myriad-pro, helvetica, arial, sans-serif;
+	font-family: avro;
+	/*font-family: myriad-pro, helvetica, arial, sans-serif;*/
 	text-transform:uppercase;
 	font-weight:normal;
 	color:#40312a;
@@ -260,28 +263,35 @@ header input{
 
 #banner{
 	background: url(../images/smaller_bg.jpg);
-	padding:30px 45px 15px 35px;
+	padding:30px 45px 5px 35px;
     color:white;
     position:relative;
     z-index:4;
 	.border-radius(7px);
-}
-
-#banner h2{
+	h2{
 	color: #3da2b4;
 	text-shadow: 0 -1px 0 #2b1f1a;
 	line-height:20px;
-	
+	}
+	p{
+		padding-right:517px;
+	}
+	li{
+
+	display: inline-block;
+	width: 130px;
+	height:28px;
+	background: url(../images/buttonBg.jpg);
+	margin-right: 20px;
+	.border-radius(5px);
+	padding-top: 8px;
+	}
+	a{
+		color:white;
+		padding: 30px;
+	}
 }
 
-#banner h2,#banner p{
-	padding-right:517px;
-}
-
-#banner input,#banner button{
-	margin-right:20px;
-	color: white;
-}
 
 
 #featured {
@@ -398,6 +408,15 @@ header input{
         }
 }
     
+.js .tabs{ 
+	h4{
+	display: none;
+	}
+	>ul:not(:first-child){
+		display: none;
+	}
+	
+}
 #tabHeadings{
 	display:block;
 	margin-bottom: 0;

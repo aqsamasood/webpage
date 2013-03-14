@@ -1,0 +1,1 @@
+function validateForm(){var e=document.forms.myForm.email.value,t=e.indexOf("@"),n=e.lastIndexOf(".");if(t<1||n<t+2||n+2>=e.length){alert("Not a valid e-mail address");return!1}}$("ul li:first-child").click(function(){$(this).show("#categories")});
