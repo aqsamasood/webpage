@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <head>
-	<script  src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
- <script src="js/scripts.js"></script>
-<script>document.documentElement.className='js';</script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+ 	<script src="js/scripts.js"></script>
+	<script>document.documentElement.className='js';</script>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<title>SITENAME</title>
 	<meta name="generator" content="TextMate http://macromates.com/">
@@ -10,7 +10,7 @@
 	<!-- Date: 2013-02-14 -->
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel="stylesheet" type="text/css" href="font/stylesheet.css">
-	<script  href="js/validation.js"></script>
+	<script  src="js/validation.js"></script>
 	
  
 </head>
@@ -30,7 +30,7 @@
 		</nav>
 	
 		
-		<form action="#" method="get" class="grid_7">
+		<form action="#" method="get" class="grid_7" onSubmit="return validateForm();">
 			    <p>Search:<input type="text" name="search" value="" id="search" placeholder=""></p>
 			    <p id="searchIcon"><img src="images/searchIcon.png"></p>
 		 </form>
@@ -218,14 +218,15 @@
 				<footer class="container_24">
 					<section class="grid_8">
 						<h3>Get a free Quote</h3>
-						<form action="#" onsubmit="return validateForm();" method="post">
-							<input type="text" id="name" name="name" value="Your Name"
+						<form onsubmit='return formValidator()' action="#" mathod="post" >
+							<input type="text" id="name" name="name" placeholder="Your Name"
 							> </input>
-							<input type="text" name="email" value="Your Email"> </input>
-							<textarea name="projectDetials" value="Your Project Details."> </textarea>
-							<input type="text" name="timescale" value="Your TimeScale" size="38px"> </input>
- 
-							<button>SUBMIT!</button>
+							<input type="text" id="email" placeholder="Your Email"> </input>
+							<textarea rows="10" cols="50" id="projectDetails"placeholder="Your Project Details...."></textarea>
+								
+							
+							<input id="timescale" type="text" placeholder="Your TimeScale" size="38px"> </input>
+							<button id="form_submit">SUBMIT!</button>
 					  </form>
                   </section>
 
@@ -253,25 +254,27 @@
 								</a>
 							</li>
 						</ul>
-						<button>PORTFOLIO</button>			
+						<button id="portfolio-button">PORTFOLIO</button>			
 					</section>
 
 					<section id="twitter" class="grid_8">
-						<h3>Twitter Stream</h3>
+						
+					
+		<h3>Twitter Stream</h3>
 						<ul>
 							<li>
-								<p>Lorem  psum dolor sit amet, consecteturadipiscing  elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<span> <a href="#">5 Hours Ago</a>, via Tweetdeck.</span> </p>
+								<p>Lorem  psum dolor sit amet, consecteturadipiscing  elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<span id="tweet1"> <a href="#">5 Hours Ago</a>, via Tweetdeck.</span> </p>
 							</li>
 
 							<li>
-								<p>Lorem  psum dolor sit amet, consecteturadipiscing  elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<span> <a href="#">5 Hours Ago</a>, via Tweetdeck.</span> </p>
+								<p>Lorem  psum dolor sit amet, consecteturadipiscing  elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<span id="tweet2"> <a href="#">5 Hours Ago</a>, via Tweetdeck.</span> </p>
 							</li>
 
 							<li>
-								<p>Lorem  psum dolor sit amet, consecteturadipiscing  elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <span> <a href="#">5 Hours Ago</a>, via Tweetdeck.</span></p>
+								<p>Lorem  psum dolor sit amet, consecteturadipiscing  elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <span id="tweet3"> <a href="#">5 Hours Ago</a>, via Tweetdeck.</span></p>
 							</li>
 						</ul>
-						<button>FOLLOW US </button>		
+						<button id="follow-button">FOLLOW US </button>		
 					</section>	
 				
 			</div>				
